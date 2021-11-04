@@ -28,7 +28,7 @@
         <!-- Recipe -->
 
   <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="PLA_Type67StickGrenade"]/costList</xpath>
+    <xpath>Defs/ThingDef[defName="PLA_Type67StickGrenade"]/costList | Defs/ThingDef[defName="PLA_Type67StickGrenade"]/recipeMaker</xpath>
   </Operation>
 
 </Patch>
