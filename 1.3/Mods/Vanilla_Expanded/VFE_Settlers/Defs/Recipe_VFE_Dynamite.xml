@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_10xVFES_Weapon_GrenadeDynamite</defName>
+    <label>make dynamite x10</label>
+    <description>Make dynamite x10.</description>
+    <jobString>Making dynamite x10.</jobString>
+    <workAmount>12000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Cloth</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>140</count>
+      </li>
+    </ingredients>
+    <products>
+      <VFES_Weapon_GrenadeDynamite>10</VFES_Weapon_GrenadeDynamite>
+    </products>
+  </RecipeDef>
+
+</Defs>

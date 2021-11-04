@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+        <!-- Xenoorca Grenadier Carries OC Grenades -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef[defName="HAR_Xenoorca_NPC_Grenade"]</xpath>
+    <value>
+      <inventoryOptions>
+        <skipChance>0.0</skipChance>
+        <subOptionsTakeAll>
+          <li>
+            <thingDef>Weapon_GrenadeFrag_XO</thingDef>
+            <countRange>5~15</countRange>
+          </li>
+        </subOptionsTakeAll>
+      </inventoryOptions>
+    </value>
+  </Operation>
+
+        <!-- Single Use OC Grenades -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Weapon_GrenadeFrag_XO"]/verbs/li/verbClass</xpath>
+    <value>
+      <verbClass>Verb_ShootOneUse</verbClass>
+    </value>
+  </Operation>
+
+        <!-- Reduce Mass -->
+
+  <Operation Class="XmlExtensions.PatchOperationMath">
+    <xpath>Defs/ThingDef[defName="Weapon_GrenadeFrag_XO"]/statBases/Mass</xpath>
+    <value>10</value>
+    <operation>/</operation>
+  </Operation>
+
+        <!-- New Base -->
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Weapon_GrenadeFrag_XO"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>BaseGnatGrenade</value>
+  </Operation>
+
+        <!-- Recipe -->
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Weapon_GrenadeFrag_XO"]/costList</xpath>
+  </Operation>
+
+</Patch>

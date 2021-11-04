@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_10xWeapon_M24_RA</defName>
+    <label>make M24 grenades x10</label>
+    <description>Make M24 grenades x10.</description>
+    <jobString>Making M24 grenades x10.</jobString>
+    <workAmount>10000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <recipeUsers>
+      <li>TableRA</li>
+    </recipeUsers>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <researchPrerequisite>Stage0b_RA</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>3</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <Weapon_M24_RA>10</Weapon_M24_RA>
+    </products>
+  </RecipeDef>
+
+</Defs>

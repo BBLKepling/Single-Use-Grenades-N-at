@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+        <!-- Single Use Throwing Knives -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VWE_Throwing_Knives"]/verbs/li/verbClass</xpath>
+    <value>
+      <verbClass>Verb_ShootOneUse</verbClass>
+    </value>
+  </Operation>
+
+        <!-- Reduce Mass -->
+
+  <Operation Class="XmlExtensions.PatchOperationMath">
+    <xpath>Defs/ThingDef[defName="VWE_Throwing_Knives"]/statBases/Mass</xpath>
+    <value>10</value>
+    <operation>/</operation>
+  </Operation>
+
+        <!-- Tag -->
+
+  <Operation Class="XmlExtensions.PatchOperationSafeAdd">
+    <xpath>Defs/ThingDef[defName="VWE_Throwing_Knives"]</xpath>
+    <value>
+      <tradeTags>
+        <li>NeoGnat</li>
+      </tradeTags>
+    </value>
+  </Operation>
+
+        <!-- New Base -->
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="VWE_Throwing_Knives"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>BaseGnatNeolithic</value>
+  </Operation>
+
+        <!-- Recipe -->
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="VWE_Throwing_Knives"]/stuffCategories | Defs/ThingDef[defName="VWE_Throwing_Knives"]/costStuffCount | Defs/ThingDef[defName="VWE_Throwing_Knives"]/recipeMaker</xpath>
+  </Operation>
+
+</Patch>

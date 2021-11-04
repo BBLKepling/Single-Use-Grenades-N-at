@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_10xClown_HotPotato</defName>
+    <label>make hot potato x10</label>
+    <description>Make hot potato x10.</description>
+    <jobString>Making hot potato x10.</jobString>
+    <workAmount>12000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <researchPrerequisite>ClownResearch</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawPotatoes</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <products>
+      <Clown_HotPotato>10</Clown_HotPotato>
+    </products>
+  </RecipeDef>
+
+</Defs>

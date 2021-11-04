@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_10xWeapon_GrenadePoison</defName>
+    <label>make poison ivy x10</label>
+    <description>Make poison ivy x10.</description>
+    <jobString>Making poison ivy x10.</jobString>
+    <workAmount>7500</workAmount>
+    <workSkill>Intellectual</workSkill>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <effectWorking>BurnDrug</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <recipeUsers>
+      <li>DrugLab</li>
+      <li>ElectricSmithy</li>
+      <li>FueledSmithy</li>
+    </recipeUsers>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <researchPrerequisite>GasOperation</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>20</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Yayo</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <products>
+      <Weapon_GrenadePoison>10</Weapon_GrenadePoison>
+    </products>
+  </RecipeDef>
+
+</Defs>

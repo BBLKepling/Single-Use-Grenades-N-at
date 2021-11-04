@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_10xVWE_ToxicGrenade</defName>
+    <label>make toxic grenades x10</label>
+    <description>Make toxic grenades x10.</description>
+    <jobString>Making toxic grenades x10.</jobString>
+    <workAmount>20000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <researchPrerequisite>VWE_TacticalGrenades</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>7</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>35</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <VWE_ToxicGrenade>10</VWE_ToxicGrenade>
+    </products>
+  </RecipeDef>
+
+</Defs>

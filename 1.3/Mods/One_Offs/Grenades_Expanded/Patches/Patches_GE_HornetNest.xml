@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+        <!-- Single Use Hornet Nest -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Weapon_HornetNest"]/verbs/li/verbClass</xpath>
+    <value>
+      <verbClass>Verb_ShootOneUse</verbClass>
+    </value>
+  </Operation>
+
+        <!-- Reduce Mass -->
+
+  <Operation Class="XmlExtensions.PatchOperationMath">
+    <xpath>Defs/ThingDef[defName="Weapon_HornetNest"]/statBases/Mass</xpath>
+    <value>10</value>
+    <operation>/</operation>
+  </Operation>
+
+        <!-- New Base -->
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Weapon_HornetNest"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>BaseGnatGrenade</value>
+  </Operation>
+
+        <!-- Recipe -->
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Weapon_HornetNest"]/costList | Defs/ThingDef[defName="Weapon_HornetNest"]/recipeMaker</xpath>
+  </Operation>
+
+        <!-- Remove wood with bees -->
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>RimBees</li>
+      <li>Misc. Bees'n'Honey</li>
+    </mods>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/RecipeDef[defName="Make_10xWeapon_HornetNest"]/ingredients/li/filter/thingDefs/li[text()="WoodLog"] | Defs/RecipeDef[defName="Make_10xWeapon_HornetNest"]/fixedIngredientFilter/thingDefs/li[text()="WoodLog"]</xpath>
+    </match>
+  </Operation>
+
+</Patch>

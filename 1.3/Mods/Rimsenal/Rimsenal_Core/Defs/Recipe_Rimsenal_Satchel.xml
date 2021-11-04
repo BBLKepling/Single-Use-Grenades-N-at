@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_10xJI_Dunder</defName>
+    <label>make satchel charges x10</label>
+    <description>Make satchel charges x10.</description>
+    <jobString>Making satchel charges x10.</jobString>
+    <workAmount>10000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <recipeUsers>
+      <li>JITable</li>
+    </recipeUsers>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <researchPrerequisite>MoltenTech</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>9</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>55</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+    </ingredients>
+    <products>
+      <JI_Dunder>10</JI_Dunder>
+    </products>
+  </RecipeDef>
+
+</Defs>

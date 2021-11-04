@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<XmlExtensions.SettingsMenuDef>
+    <defName>SingleUseGNAT</defName>
+    <modId>SingleUseGNAT</modId>
+    <label>Single Use GNAT</label>
+    <settings>
+      <li Class="XmlExtensions.Setting.Text">
+        <text>All settings require restart to take effect.</text>
+        <anchor>Middle</anchor>
+      </li>
+      <li Class="XmlExtensions.Setting.GapLine" />
+      <li Class="XmlExtensions.Setting.Text">
+        <text>Grenades Settings</text>
+        <anchor>Middle</anchor>
+      </li>
+      <li Class="XmlExtensions.Setting.Slider">
+        <key>GrenadeStack</key>
+        <label>Stack Limit: {GrenadeStack}</label>
+        <defaultValue>10</defaultValue>
+        <min>1</min>
+        <max>100</max>
+        <decimals>0</decimals>
+      </li>
+      <li Class="XmlExtensions.Setting.GapLine" />
+      <li Class="XmlExtensions.Setting.Text">
+        <text>Throwable N'at Settings</text>
+        <anchor>Middle</anchor>
+      </li>
+      <li Class="XmlExtensions.Setting.Slider">
+        <key>ThrowStack</key>
+        <label>Stack Limit: {ThrowStack}</label>
+        <defaultValue>10</defaultValue>
+        <min>1</min>
+        <max>100</max>
+        <decimals>0</decimals>
+      </li>
+      <li Class="XmlExtensions.Setting.GapLine" />
+      <li Class="XmlExtensions.Setting.ResetSettings"/>
+    </settings>
+</XmlExtensions.SettingsMenuDef>
+
+</Defs>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_10xYeetBlade_Francisca</defName>
+    <label>make francisca x10</label>
+    <description>Make francisca x10.</description>
+    <jobString>Making francisca x10.</jobString>
+    <workAmount>3500</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_MakeBow</soundWorking>
+    <recipeUsers>
+      <li>FueledSmithy</li>
+      <li>ElectricSmithy</li>
+    </recipeUsers>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <researchPrerequisite>Smithing</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <stuffCategoriesToAllow>
+            <li>Metallic</li>
+            <li>Woody</li>
+          </stuffCategoriesToAllow>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <stuffCategoriesToAllow>
+        <li>Metallic</li>
+        <li>Woody</li>
+     </stuffCategoriesToAllow>
+    </fixedIngredientFilter>
+    <products>
+      <YeetBlade_Francisca>10</YeetBlade_Francisca>
+    </products>
+  </RecipeDef>
+
+</Defs>

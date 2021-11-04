@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+        <!-- Single Use Tactical Throwing Knife -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="YeetBlade_KnifeTactical"]/verbs/li/verbClass</xpath>
+    <value>
+      <verbClass>Verb_ShootOneUse</verbClass>
+    </value>
+  </Operation>
+
+        <!-- Reduce Mass -->
+
+  <Operation Class="XmlExtensions.PatchOperationMath">
+    <xpath>Defs/ThingDef[defName="YeetBlade_KnifeTactical"]/statBases/Mass</xpath>
+    <value>10</value>
+    <operation>/</operation>
+  </Operation>
+
+        <!-- New Base -->
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="YeetBlade_KnifeTactical"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>BaseGnatNeolithic</value>
+  </Operation>
+
+        <!-- Recipe -->
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="YeetBlade_KnifeTactical"]/stuffCategories | Defs/ThingDef[defName="YeetBlade_KnifeTactical"]/costStuffCount | Defs/ThingDef[defName="YeetBlade_KnifeTactical"]/recipeMaker</xpath>
+  </Operation>
+
+</Patch>

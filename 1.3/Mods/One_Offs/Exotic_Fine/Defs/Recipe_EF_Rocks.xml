@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_10xEF_RockBundle</defName>
+    <label>make bundle of rocks x10</label>
+    <description>Make bundle of rocks x10.</description>
+    <jobString>Making bundle of rocks x10.</jobString>
+    <workAmount>1000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_MakeBow</soundWorking>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneBlocks</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <RockBundle>10</RockBundle>
+    </products>
+  </RecipeDef>
+
+</Defs>

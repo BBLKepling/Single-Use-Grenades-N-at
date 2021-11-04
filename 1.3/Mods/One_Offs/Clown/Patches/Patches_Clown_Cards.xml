@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+        <!-- Single Use Playing Cards -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Clown_ThrowingCards"]/verbs/li/verbClass</xpath>
+    <value>
+      <verbClass>Verb_ShootOneUse</verbClass>
+    </value>
+  </Operation>
+
+        <!-- Full Deck Stack -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Clown_ThrowingCards"]</xpath>
+    <value>
+      <stackLimit>52</stackLimit>
+    </value>
+  </Operation>
+
+        <!-- Reduce Mass -->
+
+  <Operation Class="XmlExtensions.PatchOperationMath">
+    <xpath>Defs/ThingDef[defName="Clown_ThrowingCards"]/statBases/Mass</xpath>
+    <value>10</value>
+    <operation>/</operation>
+  </Operation>
+
+        <!-- New Base -->
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="Clown_ThrowingCards"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>BaseGnatGrenade</value>
+  </Operation>
+
+        <!-- Recipe -->
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Clown_ThrowingCards"]/costList | Defs/ThingDef[defName="Clown_ThrowingCards"]/recipeMaker</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="Clown_ThrowingCards"]/statBases/MarketValue</xpath>
+  </Operation>
+
+</Patch>

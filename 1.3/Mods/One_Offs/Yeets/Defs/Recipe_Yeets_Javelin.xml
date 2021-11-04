@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_10xYeetBlade_Javelin</defName>
+    <label>make javelin x10</label>
+    <description>Make javelin x10.</description>
+    <jobString>Making javelin x10.</jobString>
+    <workAmount>7000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_MakeBow</soundWorking>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+      <li>FueledSmithy</li>
+      <li>ElectricSmithy</li>
+    </recipeUsers>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <skillRequirements>
+      <Crafting>3</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <stuffCategoriesToAllow>
+            <li>Metallic</li>
+            <li>Woody</li>
+            <li>Stony</li>
+          </stuffCategoriesToAllow>
+        </filter>
+        <count>60</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <stuffCategoriesToAllow>
+        <li>Metallic</li>
+        <li>Woody</li>
+        <li>Stony</li>
+     </stuffCategoriesToAllow>
+    </fixedIngredientFilter>
+    <products>
+      <YeetBlade_Javelin>10</YeetBlade_Javelin>
+    </products>
+  </RecipeDef>
+
+</Defs>

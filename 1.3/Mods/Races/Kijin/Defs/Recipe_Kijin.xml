@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_10xKijin_SmokeBomb</defName>
+    <label>make kijin smoke bombs x10</label>
+    <description>Make kijin smoke bombs x10.</description>
+    <jobString>Making kijin smoke bombs x10.</jobString>
+    <workAmount>24000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <recipeUsers>
+      <li>KijinSmithy</li>
+      <li>KijinElectricSmithy</li>
+    </recipeUsers>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <researchPrerequisite>KijinSmokeWeapons</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>6</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SmokeleafLeaves</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <stuffCategoriesToAllow>
+            <li>Fabric</li>
+            <li>Leathery</li>
+          </stuffCategoriesToAllow>
+        </filter>
+        <count>40</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <stuffCategoriesToAllow>
+        <li>Fabric</li>
+        <li>Leathery</li>
+      </stuffCategoriesToAllow>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <disallowedThingDefs>
+        <li>Gold</li>
+        <li>Silver</li>
+        <li>Jade</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
+    <products>
+      <Kijin_SmokeBomb>10</Kijin_SmokeBomb>
+    </products>
+  </RecipeDef>
+
+</Defs>

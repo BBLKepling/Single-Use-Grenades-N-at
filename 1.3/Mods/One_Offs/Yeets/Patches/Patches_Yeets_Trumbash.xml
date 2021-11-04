@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+        <!-- Single Use Trumbash -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="YeetBlade_Trumbash"]/verbs/li/verbClass</xpath>
+    <value>
+      <verbClass>Verb_ShootOneUse</verbClass>
+    </value>
+  </Operation>
+
+        <!-- Reduce Mass -->
+
+  <Operation Class="XmlExtensions.PatchOperationMath">
+    <xpath>Defs/ThingDef[defName="YeetBlade_Trumbash"]/statBases/Mass</xpath>
+    <value>10</value>
+    <operation>/</operation>
+  </Operation>
+
+        <!-- Tag -->
+
+  <Operation Class="XmlExtensions.PatchOperationSafeAdd">
+    <xpath>Defs/ThingDef[defName="YeetBlade_Trumbash"]</xpath>
+    <value>
+      <tradeTags>
+        <li>NeoGnat</li>
+      </tradeTags>
+    </value>
+  </Operation>
+
+        <!-- New Base -->
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="YeetBlade_Trumbash"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>BaseGnatNeolithic</value>
+  </Operation>
+
+        <!-- Recipe -->
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="YeetBlade_Trumbash"]/stuffCategories | Defs/ThingDef[defName="YeetBlade_Trumbash"]/costStuffCount | Defs/ThingDef[defName="YeetBlade_Trumbash"]/recipeMaker</xpath>
+  </Operation>
+
+</Patch>

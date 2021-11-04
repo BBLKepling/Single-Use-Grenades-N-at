@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_10xEF_Bola</defName>
+    <label>make bola x10</label>
+    <description>Make bola x10.</description>
+    <jobString>Making bola x10.</jobString>
+    <workAmount>12000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_MakeBow</soundWorking>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>6</Crafting>
+    </skillRequirements>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDef>
+            <li>Steel</li>
+          </thingDef>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Bola>10</Bola>
+    </products>
+  </RecipeDef>
+
+</Defs>

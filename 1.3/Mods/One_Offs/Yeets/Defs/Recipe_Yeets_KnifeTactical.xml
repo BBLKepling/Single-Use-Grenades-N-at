@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_10xYeetBlade_KnifeTactical</defName>
+    <label>make tactical knife x10</label>
+    <description>Make tactical knife x10.</description>
+    <jobString>Making tactical knife x10.</jobString>
+    <workAmount>1000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_MakeBow</soundWorking>
+    <recipeUsers>
+      <li>FueledSmithy</li>
+      <li>ElectricSmithy</li>
+    </recipeUsers>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <researchPrerequisite>Machining</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <stuffCategoriesToAllow>
+            <li>Metallic</li>
+            <li>Woody</li>
+          </stuffCategoriesToAllow>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <stuffCategoriesToAllow>
+        <li>Metallic</li>
+        <li>Woody</li>
+     </stuffCategoriesToAllow>
+    </fixedIngredientFilter>
+    <products>
+      <YeetBlade_KnifeTactical>10</YeetBlade_KnifeTactical>
+    </products>
+  </RecipeDef>
+
+</Defs>

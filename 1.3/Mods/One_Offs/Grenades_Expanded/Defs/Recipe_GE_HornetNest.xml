@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_10xWeapon_HornetNest</defName>
+    <label>make hornet nests x10</label>
+    <description>Make hornet nests x10.</description>
+    <jobString>Making hornet nests x10.</jobString>
+    <workAmount>2500</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+    <effectWorking>Tailor</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <skillRequirements>
+      <Crafting>7</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+            <li MayRequire="sarg.rimbees">RB_WildHive_Temperate</li>
+            <li MayRequire="sarg.rimbees">RB_WildHive_Mild</li>
+            <li MayRequire="Haplo.Miscellaneous.BeesNHoney">HoneycombWithQueen</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineHerbal</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoolMuffalo</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WoodLog</li>
+        <li MayRequire="sarg.rimbees">RB_WildHive_Temperate</li>
+        <li MayRequire="sarg.rimbees">RB_WildHive_Mild</li>
+        <li MayRequire="Haplo.Miscellaneous.BeesNHoney">HoneycombWithQueen</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Weapon_HornetNest>10</Weapon_HornetNest>
+    </products>
+  </RecipeDef>
+
+</Defs>

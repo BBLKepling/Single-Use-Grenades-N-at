@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationAdd">
+  <xpath>Defs/PawnKindDef[defName="Tribal_HeavyArcher"]</xpath>
+  <value>
+    <inventoryOptions>
+      <skipChance>0.0</skipChance>
+      <subOptionsTakeAll>
+        <li>
+          <thingDef>Pila</thingDef>
+          <countRange>
+            <min>8</min>
+            <max>15</max>
+          </countRange>
+        </li>
+      </subOptionsTakeAll>
+    </inventoryOptions>
+  </value>
+</Operation>
+
+</Patch>

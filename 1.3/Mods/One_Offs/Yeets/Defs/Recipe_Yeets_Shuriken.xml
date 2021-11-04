@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_10xYeetBlade_Shuriken</defName>
+    <label>make shuriken x10</label>
+    <description>Make shuriken x10.</description>
+    <jobString>Making shuriken x10.</jobString>
+    <workAmount>1200</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_MakeBow</soundWorking>
+    <recipeUsers>
+      <li>FueledSmithy</li>
+      <li>ElectricSmithy</li>
+    </recipeUsers>
+    <allowMixingIngredients>false</allowMixingIngredients>
+	<researchPrerequisite>Smithing</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>2</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <stuffCategoriesToAllow>
+            <li>Metallic</li>
+            <li>Woody</li>
+          </stuffCategoriesToAllow>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <stuffCategoriesToAllow>
+        <li>Metallic</li>
+        <li>Woody</li>
+     </stuffCategoriesToAllow>
+    </fixedIngredientFilter>
+    <products>
+      <YeetBlade_Shuriken>10</YeetBlade_Shuriken>
+    </products>
+  </RecipeDef>
+
+</Defs>

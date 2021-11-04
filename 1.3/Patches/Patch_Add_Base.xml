@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="XmlExtensions.UseSettings">
+    <modId>SingleUseGNAT</modId>
+    <keys>
+        <li>ThrowStack</li>
+        <li>GrenadeStack</li>
+    </keys>
+    <defaultValues>
+        <li>10</li>
+        <li>10</li>
+    </defaultValues>   
+    <apply>
+
+      <Operation Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+
+  <ThingDef Name="BaseGnatNeolithic" Abstract="True" ParentName="BaseWeapon">
+    <techLevel>Neolithic</techLevel>
+    <weaponTags>
+      <li>Neolithic</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Neolithic</li>
+    </weaponClasses>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <burnableByRecipe>true</burnableByRecipe>
+    <relicChance>0</relicChance>
+    <stackLimit>{ThrowStack}</stackLimit>
+  </ThingDef>
+
+  <ThingDef Name="BaseGnatGrenade" ParentName="BaseWeapon" Abstract="True">
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+    <stackLimit>{GrenadeStack}</stackLimit>
+  </ThingDef>
+
+          </value>
+      </Operation>
+
+    </apply>
+</Operation>
+
+</Patch>

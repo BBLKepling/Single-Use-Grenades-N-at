@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_10xWeapon_GrenadeAcid</defName>
+    <label>make acid bombs x10</label>
+    <description>Make acid bombs x10.</description>
+    <jobString>Making acid bombs x10.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Cooking</workSkill>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <recipeUsers>
+      <li>DrugLab</li>
+      <li>ElectricSmithy</li>
+      <li>FueledSmithy</li>
+    </recipeUsers>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <researchPrerequisite>GasOperation</researchPrerequisite>
+    <skillRequirements>
+      <Cooking>15</Cooking>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+          </thingDefs>
+        </filter>
+        <count>250</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <products>
+      <Weapon_GrenadeAcid>10</Weapon_GrenadeAcid>
+    </products>
+  </RecipeDef>
+
+</Defs>

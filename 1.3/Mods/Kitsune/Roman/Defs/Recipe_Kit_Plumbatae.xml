@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_10xKIT_WeaponRanged_Plumbatae</defName>
+    <label>make plumbatae x10</label>
+    <description>Make plumbatae x10.</description>
+    <jobString>Making plumbatae x10.</jobString>
+    <workAmount>3600</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_MakeBow</soundWorking>
+    <recipeUsers>
+      <li>FueledSmithy</li>
+      <li>ElectricSmithy</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>2</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>Smithing</researchPrerequisite>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <stuffCategoriesToAllow>
+            <li>Metallic</li>
+          </stuffCategoriesToAllow>
+        </filter>
+        <count>30</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <stuffCategoriesToAllow>
+        <li>Metallic</li>
+     </stuffCategoriesToAllow>
+    </fixedIngredientFilter>
+    <products>
+      <KIT_WeaponRanged_Plumbatae>10</KIT_WeaponRanged_Plumbatae>
+    </products>
+  </RecipeDef>
+
+</Defs>

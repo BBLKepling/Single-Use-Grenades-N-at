@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+        <!-- Single Use Throwing Stones -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="RockBundle"]/verbs/li/verbClass</xpath>
+    <value>
+      <verbClass>Verb_ShootOneUse</verbClass>
+    </value>
+  </Operation>
+
+        <!-- Reduce Mass -->
+
+  <Operation Class="XmlExtensions.PatchOperationMath">
+    <xpath>Defs/ThingDef[defName="RockBundle"]/statBases/Mass</xpath>
+    <value>10</value>
+    <operation>/</operation>
+  </Operation>
+
+        <!-- Tag -->
+
+  <Operation Class="XmlExtensions.PatchOperationSafeAdd">
+    <xpath>Defs/ThingDef[defName="RockBundle"]</xpath>
+    <value>
+      <tradeTags>
+        <li>NeoGnat</li>
+      </tradeTags>
+    </value>
+  </Operation>
+
+        <!-- New Base -->
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="RockBundle"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>BaseGnatNeolithic</value>
+  </Operation>
+
+        <!-- Recipe -->
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="RockBundle"]/stuffCategories | Defs/ThingDef[defName="RockBundle"]/costStuffCount</xpath>
+  </Operation>
+
+        <!-- [LTS] Ammunition -->
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[LTS] Ammunition</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+  <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="RockBundle"]</xpath>
+          <value>
+            <thingClass>Ammunition.Things.Ammo</thingClass>
+          </value>
+  </li>
+
+  <li Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="RockBundle"]/comps</xpath>
+
+      <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RockBundle"]/comps</xpath>
+      <value>
+        <li Class="Ammunition.Components.CompProps_Ammunition">
+          <attachedDefs>
+              <li>VWE_Sling</li>
+          </attachedDefs>
+        </li>
+      </value>
+      </match>
+
+      <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RockBundle"]</xpath>
+      <value>
+        <comps>
+          <li Class="Ammunition.Components.CompProps_Ammunition">
+            <attachedDefs>
+              <li>VWE_Sling</li>
+            </attachedDefs>
+          </li>
+        </comps>
+      </value>
+      </nomatch>
+
+  </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

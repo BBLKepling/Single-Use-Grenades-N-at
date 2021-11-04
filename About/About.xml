@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Single Use Grenades N'at</name>
+  <author>bblkepling</author>
+  <supportedVersions>
+    <li>1.3</li>
+  </supportedVersions>
+  <packageId>bblkepling.GNATSingleUse</packageId>
+  <description>		
+Single use grenades n'at, intended for vanilla friendly ammunition systems.
+
+Known Issue:Pawns won't equip new grenades n'at without workaround
+
+Recommended:Simple Sidearms so pawns will equip new grenades n'at.
+
+Alternative: Grenades N'at Strap
+
+Patched:
+
+Vanilla
+-Pila
+-Frag Grenades
+-EMP Grenades
+-Molotov Cocktails
+
+Vanilla Weapons Expanded
+-Throwing Rocks(Can be used as ammo if LTS Ammunition is installed)
+-Throwing Knives
+-Flash Grenades
+-Toxic Grenades
+-Smoke Grenades
+
+Vanilla Weapons Expanded - Non-Lethal
+-Tear Gas Grenades
+
+Vanilla Weapons Expanded - Tribal
+-Throwing Shards
+-Fire Bombs
+
+Vanilla Factions Expanded - Settlers
+-Dynamite
+
+Rimsenal
+-Microwave Grenades
+-Satchel Charges
+-Mini Grenades
+-Singularity Grenades
+
+Rimsenal - Enhanced Vanilla Pack
+-Smoke Grenades
+
+Westerado
+-Dynamite
+-Dynamite Bundle
+
+Smoke Grenades
+-Smoke Grenades
+
+Kit's Roman Weapons
+-Plumbatae
+
+Exotic's Fine Weaponry
+-Throwing Rocks(Can be used as ammo if LTS Ammunition is installed)
+-Bola
+
+YeetBlades
+-Rungu
+-Ula
+-Shuriken
+-Bo-shuriken
+-Chakram
+-Trumbash
+-Tomahawk
+-Francisca
+-Javelin
+-Tactical Tomahawk
+-Tactical Knife
+
+Killzone Weapons
+-M194 Grenades
+
+[LTS] Military
+-M59 Grenades
+
+Censored Armory
+-M24 Grenades
+
+Kaiser Armory
+-M1915 Grenades
+
+Tzar Armory
+-M1914 Grenades
+
+PLA-Armory
+-Type 67 Stick Grenades
+-Type 82 Grenades
+
+Eccentric Tech Flares
+-Flare
+-Chemlights
+
+Parmorpher
+-Mutagenic Grenades
+
+Xenoorca
+-OC (Orca Custom) Grenades
+
+[MLP] My Little RimPony
+-Throwable Cadence
+
+Clown Mod
+-Playing Cards
+-Hot Potato
+-Confetti Popper
+
+Ultimate Weapon Pack
+-Throwing Spoon
+	</description>
+  <modDependencies>
+    <li>
+        <packageId>Imranfish.XMLExtensions</packageId>
+	<displayName>XML Extensions</displayName>
+	<downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Imranfish.XMLExtensions</li>
+  </loadAfter>
+</ModMetaData>

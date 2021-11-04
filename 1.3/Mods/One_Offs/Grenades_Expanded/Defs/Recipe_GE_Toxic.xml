@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_10xWeapon_GrenadeToxic</defName>
+    <label>make toxic flask x10</label>
+    <description>Make toxic flask x10.</description>
+    <jobString>Making toxic flask x10.</jobString>
+    <workAmount>3500</workAmount>
+    <workSkill>Cooking</workSkill>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <researchPrerequisite>Alchemy</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PsychoidLeaves</li>
+          </thingDefs>
+        </filter>
+        <count>17</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineHerbal</li>
+          </thingDefs>
+        </filter>
+        <count>23</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SmokeleafLeaves</li>
+          </thingDefs>
+        </filter>
+        <count>420</count>
+      </li>
+    </ingredients>
+    <products>
+      <Weapon_GrenadeToxic>10</Weapon_GrenadeToxic>
+    </products>
+  </RecipeDef>
+
+</Defs>

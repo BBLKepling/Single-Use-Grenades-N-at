@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_10xThrowingSpoon</defName>
+    <label>make throwing spoons x10</label>
+    <description>Make throwing spoons x10.</description>
+    <jobString>Making throwing spoons x10.</jobString>
+    <workAmount>7500</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_MakeBow</soundWorking>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>3</Crafting>
+    </skillRequirements>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDef>
+            <li>WoodLog</li>
+          </thingDef>
+        </filter>
+        <count>70</count>
+      </li>
+    </ingredients>
+    <products>
+      <ThrowingSpoon>10</ThrowingSpoon>
+    </products>
+  </RecipeDef>
+
+</Defs>

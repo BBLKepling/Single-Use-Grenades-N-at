@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+        <!-- Single Use Cadence -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="MLRP_WifeThrower"]/verbs/li/verbClass</xpath>
+    <value>
+      <verbClass>Verb_ShootOneUse</verbClass>
+    </value>
+  </Operation>
+
+        <!-- Reduce Mass -->
+
+  <Operation Class="XmlExtensions.PatchOperationMath">
+    <xpath>Defs/ThingDef[defName="MLRP_WifeThrower"]/statBases/Mass</xpath>
+    <value>10</value>
+    <operation>/</operation>
+  </Operation>
+
+        <!-- Tag -->
+
+  <Operation Class="XmlExtensions.PatchOperationSafeAdd">
+    <xpath>Defs/ThingDef[defName="MLRP_WifeThrower"]</xpath>
+    <value>
+      <tradeTags>
+        <li>NeoGnat</li>
+      </tradeTags>
+    </value>
+  </Operation>
+
+        <!-- New Base -->
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="MLRP_WifeThrower"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>BaseGnatNeolithic</value>
+  </Operation>
+
+        <!-- Recipe -->
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="MLRP_WifeThrower"]/costList | Defs/ThingDef[defName="MLRP_WifeThrower"]/recipeMaker</xpath>
+  </Operation>
+
+</Patch>

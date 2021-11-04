@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]</xpath>
+    <value>
+      <inventoryOptions>
+        <skipChance>0.0</skipChance>
+        <subOptionsTakeAll>
+          <li>
+            <thingDef>Weapon_GrenadeFrag</thingDef>
+            <countRange>
+              <min>8</min>
+              <max>15</max>
+            </countRange>
+          </li>
+        </subOptionsTakeAll>
+      </inventoryOptions>
+    </value>
+  </Operation>
+
+<!-- Check for Mods and Add to Integers if Grenades are added-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Weapons Expanded</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/inventoryOptions/subOptionsTakeAll</xpath>
+          <value>
+            <li>
+              <thingDef>VWE_FlashGrenade</thingDef>
+              <countRange>1~2</countRange>
+            </li>
+            <li>
+              <thingDef>VWE_SmokeGrenade</thingDef> <!-- Smoke Grenades don't count vs frag spawn -->
+              <countRange>0~2</countRange>
+            </li>
+            <li>
+              <thingDef>VWE_ToxicGrenade</thingDef>
+              <countRange>0~1</countRange>
+            </li>
+          </value>
+        </li>
+
+        <li Class="XmlExtensions.PatchOperationMath">
+          <xpath>Defs/XmlExtensions.SlateDef[@Name="GnatIntegerFrag_Royalty"]/min</xpath>
+          <value>1</value>
+          <operation>+</operation>
+        </li>
+
+        <li Class="XmlExtensions.PatchOperationMath">
+          <xpath>Defs/XmlExtensions.SlateDef[@Name="GnatIntegerFrag_Royalty"]/max</xpath>
+          <value>3</value>
+          <operation>+</operation>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Rimsenal - Core</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/inventoryOptions</xpath>
+          <value>
+           <subOptionsChooseOne> <!-- ChooseOne -->
+            <li>
+              <thingDef>JI_Dunder</thingDef>
+              <countRange>0~1</countRange>
+            </li>
+            <li>
+              <thingDef>GD_Bobcat</thingDef>
+              <countRange>0~1</countRange>
+            </li>
+            <li>
+              <thingDef>TE_Grief</thingDef>
+              <countRange>0~1</countRange>
+            </li>
+            <li>
+              <thingDef>YP_BaegYa</thingDef>
+              <countRange>0~1</countRange>
+            </li>
+           </subOptionsChooseOne>
+          </value>
+        </li>
+
+        <li Class="XmlExtensions.PatchOperationMath">
+          <xpath>Defs/XmlExtensions.SlateDef[@Name="GnatIntegerFrag_Royalty"]/max</xpath>
+          <value>1</value>
+          <operation>+</operation>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Rimsenal - Augmented Vanilla Pack</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/inventoryOptions/subOptionsTakeAll</xpath>
+          <value>
+            <li>
+              <thingDef>Weapon_GrenadeSmoke</thingDef> <!-- Smoke Grenades don't count vs frag spawn -->
+              <countRange>0~2</countRange>
+            </li>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Smoke Grenades</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/inventoryOptions/subOptionsTakeAll</xpath>
+          <value>
+            <li>
+              <thingDef>Weapon_GrenadeSmoke</thingDef> <!-- Smoke Grenades don't count vs frag spawn -->
+              <countRange>0~2</countRange>
+            </li>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[LTS]Military</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/inventoryOptions/subOptionsTakeAll</xpath>
+          <value>
+            <li>
+              <thingDef>LTS_Handgranat</thingDef>
+              <countRange>1~3</countRange>
+            </li>
+          </value>
+        </li>
+
+        <li Class="XmlExtensions.PatchOperationMath">
+          <xpath>Defs/XmlExtensions.SlateDef[@Name="GnatIntegerFrag_Royalty"]/min</xpath>
+          <value>1</value>
+          <operation>+</operation>
+        </li>
+
+        <li Class="XmlExtensions.PatchOperationMath">
+          <xpath>Defs/XmlExtensions.SlateDef[@Name="GnatIntegerFrag_Royalty"]/max</xpath>
+          <value>3</value>
+          <operation>+</operation>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+<!-- Subtract Integers from Min and Max Values -->
+  <Operation Class="XmlExtensions.PatchOperationMath">
+    <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/inventoryOptions/subOptionsTakeAll/li/thingDef[text()="Weapon_GrenadeFrag"]/../countRange/min</xpath>
+    <value>Defs/XmlExtensions.SlateDef[@Name="GnatIntegerFrag_Royalty"]/min</value>
+    <operation>-</operation>
+    <fromXml>true</fromXml>
+  </Operation>
+
+  <Operation Class="XmlExtensions.PatchOperationMath">
+    <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/inventoryOptions/subOptionsTakeAll/li/thingDef[text()="Weapon_GrenadeFrag"]/../countRange/max</xpath>
+    <value>Defs/XmlExtensions.SlateDef[@Name="GnatIntegerFrag_Royalty"]/max</value>
+    <operation>-</operation>
+    <fromXml>true</fromXml>
+  </Operation>
+
+</Patch>

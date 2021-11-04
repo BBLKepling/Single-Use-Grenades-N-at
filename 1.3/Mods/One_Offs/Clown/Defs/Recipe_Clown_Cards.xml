@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_10xClown_ThrowingCards</defName>
+    <label>make sharp playing cards x10</label>
+    <description>Make sharp playing cards x10.</description>
+    <jobString>Making sharp playing cards x10.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <researchPrerequisite>ClownResearch</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <products>
+      <Clown_ThrowingCards>10</Clown_ThrowingCards>
+    </products>
+  </RecipeDef>
+
+</Defs>

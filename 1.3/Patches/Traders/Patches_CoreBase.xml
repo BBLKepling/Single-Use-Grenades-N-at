@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TraderKindDef[defName="Base_Neolithic_Standard"]/stockGenerators</xpath>
+    <value>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>NeoGnat</tradeTag>
+        <thingDefCountRange>2~3</thingDefCountRange>
+        <countRange>100~200</countRange>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TraderKindDef[defName="Base_Outlander_Standard"]/stockGenerators</xpath>
+    <value>
+      <li Class="StockGenerator_Category">
+        <categoryDef>Grenades</categoryDef>
+        <thingDefCountRange>2~3</thingDefCountRange>
+        <countRange>20~50</countRange>
+      </li>
+    </value>
+  </Operation>
+
+</Patch>

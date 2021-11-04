@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+        <!-- Single Use Holy Hand Grenade, Does not work -->
+      <Operation Class="XmlExtensions.PatchOperationSafeAdd">
+        <xpath>Defs/ThingDef[defName="Weapon_GrenadeArmageddon"]</xpath>
+        <value>
+          <comps>
+            <li Class="CompProperties_Reloadable">
+              <maxCharges>1</maxCharges>
+              <destroyOnEmpty>true</destroyOnEmpty>
+              <hotKey>Misc4</hotKey>
+              <chargeNoun>charge</chargeNoun>
+              <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+            </li>
+          </comps>
+        </value>
+      </Operation>
+
+</Patch>

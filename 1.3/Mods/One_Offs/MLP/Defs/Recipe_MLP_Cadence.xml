@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_10xMLRP_WifeThrower</defName>
+    <label>make wife throwers x10</label>
+    <description>Make wife throwers x10.</description>
+    <jobString>Making wife throwers x10.</jobString>
+    <workAmount>7000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+      <li>ElectricSmithy</li>
+      <li>FueledSmithy</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>3</Crafting>
+    </skillRequirements>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PonyPlush_PrincessCadence</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <products>
+      <MLRP_WifeThrower>10</MLRP_WifeThrower>
+    </products>
+  </RecipeDef>
+
+</Defs>
