@@ -74,6 +74,8 @@
 
         <li IfModActive="Mlie.ArrowPlease">1.3/Mods/One_Offs/Arrow_Please</li>
 
+        <li IfModActive="LegendaryMinuteman.BugBomb">1.3/Mods/One_Offs/LM_BugBomb</li>
+
         <li IfModActive="higgs.clownmod">1.3/Mods/One_Offs/Clown</li>
 
         <li IfModActive="EB.FineWeaponry">1.3/Mods/One_Offs/Exotic_Fine</li>

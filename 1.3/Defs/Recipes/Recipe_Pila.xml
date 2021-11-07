@@ -3,9 +3,9 @@
 
   <RecipeDef>
     <defName>Make_10xPila</defName>
-    <label>make pilum x10</label>
-    <description>Make pilum x10.</description>
-    <jobString>Making pilum x10.</jobString>
+    <label>make pila x10</label>
+    <description>Make pila x10.</description>
+    <jobString>Making pila x10.</jobString>
     <workAmount>7000</workAmount>
     <workSkill>Crafting</workSkill>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
