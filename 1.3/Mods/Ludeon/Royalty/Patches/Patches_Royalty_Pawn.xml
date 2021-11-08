@@ -179,14 +179,14 @@
 
 <!-- Subtract Integers from Min and Max Values -->
   <Operation Class="XmlExtensions.PatchOperationMath">
-    <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/inventoryOptions/subOptionsTakeAll/li/thingDef[text()="Weapon_GrenadeFrag"]/../countRange/min</xpath>
+    <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/inventoryOptions/subOptionsTakeAll/li[thingDef="Weapon_GrenadeFrag"]/countRange/min</xpath>
     <value>Defs/XmlExtensions.SlateDef[@Name="GnatIntegerFrag_Royalty"]/min</value>
     <operation>-</operation>
     <fromXml>true</fromXml>
   </Operation>
 
   <Operation Class="XmlExtensions.PatchOperationMath">
-    <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/inventoryOptions/subOptionsTakeAll/li/thingDef[text()="Weapon_GrenadeFrag"]/../countRange/max</xpath>
+    <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/inventoryOptions/subOptionsTakeAll/li[thingDef="Weapon_GrenadeFrag"]/countRange/max</xpath>
     <value>Defs/XmlExtensions.SlateDef[@Name="GnatIntegerFrag_Royalty"]/max</value>
     <operation>-</operation>
     <fromXml>true</fromXml>

@@ -220,28 +220,28 @@
 
 <!-- Subtract Integers from Min and Max Values -->
   <Operation Class="XmlExtensions.PatchOperationMath">
-    <xpath>Defs/PawnKindDef[defName="Grenadier_Destructive"]/inventoryOptions/subOptionsTakeAll/li/thingDef[text()="Weapon_GrenadeFrag"]/../countRange/min</xpath>
+    <xpath>Defs/PawnKindDef[defName="Grenadier_Destructive"]/inventoryOptions/subOptionsTakeAll/li[thingDef="Weapon_GrenadeFrag"]/countRange/min</xpath>
     <value>Defs/XmlExtensions.SlateDef[@Name="GnatIntegerFrag"]/min</value>
     <operation>-</operation>
     <fromXml>true</fromXml>
   </Operation>
 
   <Operation Class="XmlExtensions.PatchOperationMath">
-    <xpath>Defs/PawnKindDef[defName="Grenadier_Destructive"]/inventoryOptions/subOptionsTakeAll/li/thingDef[text()="Weapon_GrenadeFrag"]/../countRange/max</xpath>
+    <xpath>Defs/PawnKindDef[defName="Grenadier_Destructive"]/inventoryOptions/subOptionsTakeAll/li[thingDef="Weapon_GrenadeFrag"]/countRange/max</xpath>
     <value>Defs/XmlExtensions.SlateDef[@Name="GnatIntegerFrag"]/max</value>
     <operation>-</operation>
     <fromXml>true</fromXml>
   </Operation>
 
   <Operation Class="XmlExtensions.PatchOperationMath">
-    <xpath>Defs/PawnKindDef[defName="Grenadier_Destructive"]/inventoryOptions/subOptionsTakeAll/li/thingDef[text()="Weapon_GrenadeMolotov"]/../countRange/min</xpath>
+    <xpath>Defs/PawnKindDef[defName="Grenadier_Destructive"]/inventoryOptions/subOptionsTakeAll/li[thingDef="Weapon_GrenadeMolotov"]/countRange/min</xpath>
     <value>Defs/XmlExtensions.SlateDef[@Name="GnatIntegerMolotov"]/min</value>
     <operation>-</operation>
     <fromXml>true</fromXml>
   </Operation>
 
   <Operation Class="XmlExtensions.PatchOperationMath">
-    <xpath>Defs/PawnKindDef[defName="Grenadier_Destructive"]/inventoryOptions/subOptionsTakeAll/li/thingDef[text()="Weapon_GrenadeMolotov"]/../countRange/max</xpath>
+    <xpath>Defs/PawnKindDef[defName="Grenadier_Destructive"]/inventoryOptions/subOptionsTakeAll/li[thingDef="Weapon_GrenadeMolotov"]/countRange/max</xpath>
     <value>Defs/XmlExtensions.SlateDef[@Name="GnatIntegerMolotov"]/max</value>
     <operation>-</operation>
     <fromXml>true</fromXml>
